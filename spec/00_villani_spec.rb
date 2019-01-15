@@ -1,20 +1,22 @@
-require_relative '../lib/villani.rb'
+# frozen_string_literal: true
 
-describe "the multiples of 3 or 5 function" do
-  it "5 is a multiple of 5" do
+require_relative '../lib/00_villani.rb'
+
+describe "the multiples of 3 or 5 method" do
+  it "should return TRUE when an integer is a multiple of 3 or 5" do
     expect(multiples_of_3_or_5?(5)).to eq(true)
-  end
 
-  it "17 is not a multiple of 5" do
-    expect(multiples_of_3_or_5?(17)).to eq(false)
-  end
-
-  it "9 is a multiple of 3" do
     expect(multiples_of_3_or_5?(9)).to eq(true)
+
+    expect(multiples_of_3_or_5?(3)).to eq(true)
   end
 
-  it "3 is a multiple of 3" do
-    expect(multiples_of_3_or_5?(3)).to eq(true)
+  it "should return FALSE when an integer is not a multiple of 3 or 5" do
+    expect(multiples_of_3_or_5?(17)).to eq(false)
+
+    expect(multiples_of_3_or_5?(559)).to eq(false)
+
+    expect(multiples_of_3_or_5?(787)).to eq(false)
   end
 end
 
