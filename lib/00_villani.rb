@@ -21,6 +21,7 @@ def sum_of_3_or_5_multiples(target_num)
     list_of_numbers[i] = i
     i += 1
   end
+
   sum = 0
   list_of_numbers.each do |number|
     if multiples_of_3_or_5?(number)
