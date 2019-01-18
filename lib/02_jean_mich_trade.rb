@@ -8,8 +8,8 @@ def day_trader(price_per_day)
   array = price_per_day
   comparisons = []
   data = []
-
   best_prices = []
+
   array.each_with_index do |price, index|
     comparison = array[index..array.length]
     comparison.map! { |e| e - price }
