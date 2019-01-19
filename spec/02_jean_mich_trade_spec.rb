@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../lib/02_jean_mich_trad.rb'
+require_relative '../lib/02_jean_mich_trade'
 
 describe "it decides of the best days to buy and sell actions" do
   it "should return [1, 4]" do

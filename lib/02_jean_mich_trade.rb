@@ -6,7 +6,6 @@ end
 
 def day_trader(price_per_day)
   array = price_per_day
-  comparisons = []
   data = []
   best_prices = []
 
@@ -27,5 +26,3 @@ def day_trader(price_per_day)
 
   best_prices
 end
-
-puts day_trader([17, 3, 6, 9, 15, 8, 6, 1, 10])
