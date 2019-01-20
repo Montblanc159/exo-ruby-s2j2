@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 def shakes_dic
-  dictionnary = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are"]
+  ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are"]
 end
 
 def swear_dic
-  dictionnary = File.open('./lib/content/swear_words.txt').read.split(/\r\n/)
+  File.open('./lib/content/swear_words.txt').read.split(/\r\n/)
 end
 
 def corpus_file
-  corpus = File.open('./lib/content/shakespeare.txt').read.split(" ")
+  File.open('./lib/content/shakespeare.txt').read.split(" ")
 end
 
 def find_words
@@ -40,6 +42,3 @@ def find_swear_words
   end
   occurence_hash
 end
-
-# puts swear_dic
-puts find_swear_words
